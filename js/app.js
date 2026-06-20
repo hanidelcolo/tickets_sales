@@ -24,8 +24,8 @@ const emptyState       = document.getElementById('emptyState');
 const previewSubtotal  = document.getElementById('previewSubtotal');
 const previewAmount    = document.getElementById('previewAmount');
 
-var compras = [];
-var filtroActivo = 'all';
+const compras = [];
+let filtroActivo = 'all';
 
 const inventario = {
   vip:     { precio: 5000, stock: 10, vendidas: 0 },
