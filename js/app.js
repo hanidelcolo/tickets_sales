@@ -41,7 +41,7 @@ function registrarCompra(evento) {
 
   const nombre = inputNombre.value.trim();
   const tipo   = selectTipo.value;
-  const cantidad = parseInt(inputCantidad.value, 10);
+  const cantidad = Number.parseInt(inputCantidad.value, 10);
 
   if (nombre === '' || tipo === '' || inputCantidad.value === '') {
     mensajeError.textContent = 'Todos los campos son obligatorios.';
@@ -132,7 +132,7 @@ function actualizarContadores() {
 // ─── Vista previa del subtotal ────────────────────────────────────────────────
 function actualizarPreview() {
   const tipo = selectTipo.value;
-  const cantidad = parseInt(inputCantidad.value, 10);
+  const cantidad = Number.parseInt(inputCantidad.value, 10);
   if (tipo && !isNaN(cantidad) && cantidad > 0 && inventario[tipo]) {
     const subtotal = cantidad * inventario[tipo].precio;
     previewAmount.textContent = formatearPesos(subtotal);
