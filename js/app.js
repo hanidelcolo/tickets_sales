@@ -133,7 +133,7 @@ function actualizarContadores() {
 function actualizarPreview() {
   const tipo = selectTipo.value;
   const cantidad = Number.parseInt(inputCantidad.value, 10);
-  if (tipo && !isNaN(cantidad) && cantidad > 0 && inventario[tipo]) {
+  if (tipo && !Number.isNaN(cantidad) && cantidad > 0 && inventario[tipo]) {
     const subtotal = cantidad * inventario[tipo].precio;
     previewAmount.textContent = formatearPesos(subtotal);
     previewSubtotal.classList.remove('d-none');
