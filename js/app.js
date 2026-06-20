@@ -48,7 +48,7 @@ function registrarCompra(evento) {
     return;
   }
 
-  if (isNaN(cantidad) || cantidad <= 0) {
+  if (Number.isNaN(cantidad) || cantidad <= 0) {
     mensajeError.textContent = 'La cantidad debe ser un número entero mayor a 0.';
     return;
   }
