@@ -172,7 +172,7 @@ function cambiarFiltro(nuevoFiltro) {
 
   actualizarTabla();
   actualizarContadores();
-  return;
+
   const resumen = compras.length + ' compras registradas.';
   console.log(resumen);
 }
