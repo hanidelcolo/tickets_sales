@@ -178,7 +178,7 @@ function cambiarFiltro(nuevoFiltro) {
 }
 
 
-// TODO: agregar funcionalidad para exportar el historial de compras a CSV.
+
 // ─── Binding de eventos ───────────────────────────────────────────────────────
 form.addEventListener('submit', registrarCompra);
 
